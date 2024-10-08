@@ -1,53 +1,15 @@
-# vue-test
+Задание:
+Создай приложение на vue ^3.5, подключи pinia ^2.2 в качестве стора.  
+В сторе создай 2 поля - name, selected.
 
-This template should help get you started developing with Vue 3 in Vite.
+Создай компонент группы чекбоксов.  
+Компонент должен принимать массив объектов(chekboxObject) для отрисовки группы.  
+Объект chekboxObject может содержать необязательное поле value, если оно задано, то компонент возвращает его значение в списке выбранных значений, если не задано, то возвращает true.  
+Компонент должен реализовывать v-model, эмитить событие изменения. Пропсы, описание событий и т.д. должны описываться через дженерики TS.
 
-## Recommended IDE Setup
+В приложении выведи input, созданный компонент с 3-4 пунктами, значение полей name и selected из стора.  
+При вводе текста в input, введенный текст должен передаваться в стор в переменную name.  
+При выборе чекбоксов, выбранные значения должны передаваться в стор в переменную selected.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and
-disable
-Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for
-type checking. In editors, we
-need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin)
-to make the TypeScript language service aware of `.vue` types.
-
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented
-a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more
-performant. You can enable it by the following steps:
-
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+Обязательно использовать Composition API для приложения и компонентов.  
+Обязательно использовать Setup-хранилища для стора.
